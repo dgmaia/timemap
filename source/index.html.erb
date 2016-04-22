@@ -1,0 +1,37 @@
+---
+title: Welcome to Middleman
+---
+
+<header class="header">
+
+  <section class="time-now">
+    <h2>And what's the time?</h2>
+    <%= partial "shared/bb" %>
+    <p>It's</p>
+  </section>
+
+  <hr/ >
+
+  <section class="friends-list">
+
+    <h2>Friends List</h2>
+    <div class="no-friends">
+      <%= image_tag 'forever-alone.png' %>
+      <p>You don't have friends</p>
+    </div>
+    <ul>
+    </ul>
+
+  </section>
+
+  <hr/ >
+
+  <%= partial "shared/add-friend-overlay" %>
+
+</header>
+
+<section class="map black">
+
+  <%= partial "shared/map" %>
+
+</section>
